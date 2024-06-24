@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fffcef;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60px; /* Membesarkan logo */
+    width: 60px;  /* Menambahkan lebar untuk membentuk bulat */
+    border-radius: 50%; /* Membuat logo berbentuk bulat */
+    margin-right: 10px;
+}
+
+nav {
+    flex: 1; /* Membuat nav mengambil ruang yang tersedia */
+    display: flex;
+    justify-content: center; /* Menempatkan tombol-tombol navigasi di tengah */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 15px; /* Mengurangi jarak kiri */
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+main {
+    margin-top: 80px; /* Menyesuaikan margin top agar tidak tertutup header */
+    text-align: center;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    margin: 20px 0; /* Menghilangkan auto untuk full width */
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
+/* CSS sebelumnya tetap sama */
+
+.main {
+    margin-top: 80px; /* Menyesuaikan margin top agar tidak tertutup header */
+    text-align: center;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    margin: 20px 0; /* Menghilangkan auto untuk full width */
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
+
+.best-selling {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.best-selling h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.books {
+    display: flex;
+    justify-content: center;
+}
+
+.book {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.book img {
+    width: 150px; /* Ukuran gambar buku */
+    height: 200px; /* Ukuran gambar buku */
+    margin-bottom: 10px;
+}
+
+.book h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.book p {
+    color: #888;
+    font-size: 16px;
+}
+
+/* Gaya untuk banner baru di bawah Best Selling */
+.banner {
+    position: relative;
+    width: 100%;
+    margin: 20px 0; /* Mengatur margin sesuai kebutuhan */
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prev-btn2 {
+    left: 10px;
+}
+
+#next-btn2 {
+    right: 10px;
+}
+
+.book-list {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.book-list h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.buku {
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Memastikan overflow tersembunyi */
+}
+
+.buku img {
+    width: 100%; /* Lebar gambar buku */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.book-details {
+    position: absolute;
+    bottom: 0; /* Memposisikan detail di bawah gambar buku */
+    left: 0;
+    width: 100%; /* Lebar sesuai dengan gambar buku */
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang transparan */
+    padding: 10px;
+    text-align: left; /* Ratakan teks ke kiri */
+    box-sizing: border-box; /* Menyesuaikan padding ke dalam lebar total */
+}
+
+.book-details h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.book-details p {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.buy-btn {
+    background-color: #4CAF50; /* Warna latar beli */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+    width: 100%; /* Lebar tombol sesuai dengan container */
+    box-sizing: border-box; /* Menyesuaikan padding ke dalam lebar total */
+    margin-top: 10px;
+}
+
+.buy-btn:hover {
+    background-color: #45a049; /* Warna latar beli saat dihover */
+}
+
+
+
+.buku {
+    margin: 0 10px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px; /* Membuat sudut kotak bulat */
+    background-color: #fff; /* Warna latar belakang */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan dengan opasitas */
+}
+footer {
+    background-color: #fffcef;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px; /* Sesuaikan dengan jarak yang diinginkan */
+}
+
+.contact-info, .company-info {
+    margin-bottom: 30px;
+}
+
+.contact-info h2, .company-info h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-info p, .company-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
